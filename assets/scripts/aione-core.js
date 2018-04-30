@@ -1,17 +1,29 @@
 $(document).ready(function() {
 
 	/*****************************************************
+	/*  Aione tabs
+	/*****************************************************/
+	$( ".aione-tabs > .nav > *" ).click(function(e) {
+	  e.preventDefault();
+	  $(this).addClass("active").siblings().removeClass('active');
+	  var target = $(this).attr("data-target");
+	  if(target  != undefined){
+	      $(target).addClass("active").siblings().removeClass('active');
+	  }
+	});
+
+    /*****************************************************
 	/*  Aione Templates
 	/*****************************************************/
 	try{
 		$(".load-template").each(function() {
-			var teplate_file = $(this).attr("data-src");
-			if(teplate_file != undefined){
+			var template_file = $(this).attr("data-src");
+			if(template_file != undefined){
 				$(this).load(teplate_file);
 			} else {
-				var teplate_file = $(this).attr("id");
-				if(teplate_file != undefined){
-					$(this).load('template/'+teplate_file+'.html');
+				var template_file = $(this).attr("id");
+				if(template_file != undefined){
+					$(this).load('template/'+template_file+'.html');
 				}
 			}
 	    });
@@ -23,8 +35,11 @@ $(document).ready(function() {
 	/*  Aione Slider
 	/*****************************************************/
 	try{
-        var DataJson = $('.aione-slider').data();
-        $(".aione-slider").owlCarousel(DataJson);
+        var DataJson = $('.aaaaaa').data();
+        console.log("Slider Json Data");
+        console.log(DataJson);
+        //$(".aione-slider").owlCarousel(DataJson);
+        /*
 		$(".aione-slider").owlCarousel({
 			
 		    items:1,
@@ -38,6 +53,8 @@ $(document).ready(function() {
     		//animateIn: 'flipInX',
 		    navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
 		});
+		*/
+		
 	}catch(e){
 
 	}
@@ -71,12 +88,20 @@ $(document).ready(function() {
 	try{
 		var clipboard = new Clipboard('.clipboard');
 		clipboard.on('success', function(e) {
+    		console.info('Action:', e.action);
+    		console.info('Trigger:', e.trigger);
 		    console.log("Copied '" + e.text + "' to clipboard");
 		    e.clearSelection();
 		});
+		clipboard.on('error', function(e) {
+			console.error('Action:', e.action);
+			console.error('Trigger:', e.trigger);
+		});
 	}catch(e){
-
+		console.log("Filed to copy to clipboard");
 	}
+
+
 
 	/*****************************************************
 	/*  wow ja animate on scroll
@@ -338,16 +363,6 @@ $(document).ready(function() {
 		$(this).toggleClass('active');
 	});
 
-	/*****************************************************
-	/*  Aione tabs
-	/*****************************************************/
-
-	$('.aione-tabs-wrapper .aione-tabs > .aione-tab > a').click(function(e){
-		e.preventDefault();
-		$(this).parent().addClass('active').siblings().removeClass('active');
-		var selected_tab = $(this).attr('href');
-		$(selected_tab).addClass('active').siblings().removeClass('active');
-	})
 
 	/*****************************************************
 	/*  Aione FORM Section Accordion
