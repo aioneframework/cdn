@@ -12,6 +12,28 @@ $(document).ready(function() {
 	  }
 	});
 
+
+	/*****************************************************
+	/*  Aione Toggle
+	/*****************************************************/
+	$( ".aione-toggle" ).click(function(e) {
+	  e.preventDefault();
+		var data = $(this).data();
+		console.log("Toggle data");
+		console.log(data);
+
+		$(this).toggleClass(data.class);
+		var current_text = $(this).text();
+		$(this).text(data.text);
+		$(this).data('text',current_text);
+
+	  // $(this).addClass("active").siblings().removeClass('active');
+	  // var target = $(this).attr("data-target");
+	  // if(target  != undefined){
+	  //     $(target).addClass("active").siblings().removeClass('active');
+	  // }
+	});
+
     /*****************************************************
 	/*  Aione Templates
 	/*****************************************************/
