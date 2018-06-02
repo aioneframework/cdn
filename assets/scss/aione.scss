@@ -1,6 +1,10 @@
 @charset "UTF-8";
+
 // Reset
 @import "normalize/reset";
+
+// Open Sans
+@import "components/open-sans";
 
 // Aione Layout
 /********************************
@@ -18,8 +22,7 @@ Aione layout
 
 @import "components/common";
 @import "components/color";
-
-
+@import "components/ionicons";
 
 // sweetalert
 @import "../../bower_components/sweetalert/dev/sweetalert";
