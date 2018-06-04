@@ -40873,6 +40873,7 @@ input[type=checkbox]:before {
 input[type=checkbox]:checked:before {
   opacity: 1
 }
+button,
 input[type=button],
 input[type=reset],
 input[type=submit] {
@@ -40893,6 +40894,7 @@ input[type=submit] {
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out
 }
+button:hover,
 input[type=button]:hover,
 input[type=reset]:hover,
 input[type=submit]:hover {
