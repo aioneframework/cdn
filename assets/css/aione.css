@@ -38587,19 +38587,311 @@ input[type=file]:hover {
 .aione-progress-bar.active .aione-progress-bar-content {
   display: block
 }
-.aione-social {
+.aione-social-icons {
   margin: 0;
   padding: 0;
-  list-style: none
+  list-style: none;
+  text-align: center
 }
-.aione-social > li {
+.aione-social-icons .label {
+  display: none
+}
+.aione-social-icons.labels .label {
   display: inline-block
 }
-.aione-social > li > a {
+.aione-social-icons > * {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  width: 40px;
+  line-height: 40px;
+  font-weight: 400
+}
+.aione-social-icons > * > a {
   display: block
 }
-.aione-social.vertical > li {
+.aione-social-icons > * > a .icon {
+  display: inline-block
+}
+.aione-social-icons > * > a .text {
+  display: inline-block
+}
+.aione-social-icons.vertical > * {
   display: block
+}
+.aione-social-icons.small > * {
+  font-size: 16px;
+  width: 34px;
+  line-height: 30px
+}
+.aione-social-icons.large > * {
+  font-size: 26px;
+  width: 54px;
+  line-height: 50px
+}
+.aione-social-icons.circle > * {
+  -moz-border-radius: 999px;
+  -webkit-border-radius: 999px;
+  border-radius: 999px
+}
+.aione-social-icons.rounded > * {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px
+}
+.aione-social-icons.light > * {
+  color: #fff;
+  background: 0 0
+}
+.aione-social-icons.light > * > a,
+.aione-social-icons.light > * > a:hover {
+  color: #fff
+}
+.aione-social-icons.light-outline > * {
+  color: #fff;
+  border: 2px solid #fff;
+  background: 0 0
+}
+.aione-social-icons.light > * > a,
+.aione-social-icons.light > * > a:hover {
+  color: #fff
+}
+.aione-social-icons.dark > * {
+  color: #333;
+  background: 0 0
+}
+.aione-social-icons.light > * > a,
+.aione-social-icons.light > * > a:hover {
+  color: #333
+}
+.aione-social-icons.dark-outline > * {
+  border: 2px solid #333;
+  background-color: transparent
+}
+.aione-social-icons.light > * > a,
+.aione-social-icons.light > * > a:hover {
+  color: #333
+}
+.facebook {
+  background: #4060a5
+}
+.facebook > a > .icon:before {
+  font-family: FontAwesome;
+  content: "\f09a"
+}
+.twitter {
+  background: #00abe3
+}
+.twitter > a > .icon:before {
+  font-family: Ionicons;
+  content: "\f2b0"
+}
+.googleplus {
+  background: #e64522
+}
+.googleplus > a > .icon:before {
+  font-family: Ionicons;
+  content: "\f23b"
+}
+.linkedin {
+  background: #0094bc
+}
+.linkedin > a > .icon:before {
+  font-family: FontAwesome;
+  content: "\f0e1"
+}
+.pinterest {
+  background: #cb2027
+}
+.pinterest > a > .icon:before {
+  font-family: Ionicons;
+  content: "\f244"
+}
+.tumblr {
+  background: #3a5876
+}
+.tumblr > a > .icon:before {
+  font-family: Ionicons;
+  content: "\f24d"
+}
+.rss {
+  background: #e88845
+}
+.rss > a > .icon:before {
+  font-family: Ionicons;
+  content: "\f248"
+}
+.whatsapp {
+  background: #34af23
+}
+.whatsapp > a > .icon:before {
+  font-family: Ionicons;
+  content: "\f2c5"
+}
+.reddit {
+  background: #ff4500
+}
+.reddit > a > .icon:before {
+  font-family: Ionicons;
+  content: "\f247"
+}
+.buffer {
+  background: #323b43
+}
+.buffer > a > .icon:before {
+  font-family: Ionicons;
+  content: "\f22d"
+}
+.youtube {
+  background: #b00
+}
+.youtube > a > .icon:before {
+  font-family: FontAwesome;
+  content: "\f167"
+}
+.flickr {
+  background: #ff0084
+}
+.flickr > a > .icon:before {
+  font-family: FontAwesome;
+  content: "\f16e"
+}
+.instagram {
+  background: #bc2a8d
+}
+.instagram > a > .icon:before {
+  font-family: FontAwesome;
+  content: "\f16d"
+}
+.yahoo {
+  background: #7b0099
+}
+.yahoo > a > .icon:before {
+  font-family: FontAwesome;
+  content: "\f19e"
+}
+.vimeo {
+  background: #1ab7ea
+}
+.vimeo > a > .icon:before {
+  font-family: FontAwesome;
+  content: "\f27d"
+}
+.stumbleupon {
+  background: #eb4823
+}
+.stumbleupon > a > .icon:before {
+  font-family: FontAwesome;
+  content: "\f1a4"
+}
+.quora {
+  background: #a82400
+}
+.quora > a > .icon:before {
+  font-family: FontAwesome;
+  content: "\f2c4"
+}
+.foursquare {
+  background: #0072b1
+}
+.foursquare > a > .icon:before {
+  font-family: FontAwesome;
+  content: "\f180"
+}
+.forrst {
+  background: #5b9a68
+}
+.forrst > a > .icon:before {
+  font-family: Ionicons;
+  content: "\f22d"
+}
+.vk {
+  background: #45668e
+}
+.vk > a > .icon:before {
+  font-family: FontAwesome;
+  content: "\f189"
+}
+.blogger {
+  background: #fb8f3d
+}
+.blogger > a > .icon:before {
+  font-family: FontAwesome;
+  content: "\f37c"
+}
+.wordpress {
+  background: #21759b
+}
+.wordpress > a > .icon:before {
+  font-family: FontAwesome;
+  content: "\f19a"
+}
+.soundcloud {
+  background: #ff3a00
+}
+.soundcloud > a > .icon:before {
+  font-family: FontAwesome;
+  content: "\f1be"
+}
+.dribbble {
+  background: #ea4c89
+}
+.dribbble > a > .icon:before {
+  font-family: FontAwesome;
+  content: "\f17d"
+}
+.new-instagram {
+  background: #e95950
+}
+.new-instagram > a > .icon:before {
+  font-family: FontAwesome;
+  content: "\f16d"
+}
+.behance {
+  background: #1769ff
+}
+.behance > a > .icon:before {
+  font-family: FontAwesome;
+  content: "\f1b4"
+}
+.spotify {
+  background: #00e461
+}
+.spotify > a > .icon:before {
+  font-family: FontAwesome;
+  content: "\f1bc"
+}
+.vine {
+  background: #00bf8f
+}
+.vine > a > .icon:before {
+  font-family: FontAwesome;
+  content: "\f1ca"
+}
+.github {
+  background: #000
+}
+.github > a > .icon:before {
+  font-family: FontAwesome;
+  content: "\f09b"
+}
+.dropbox {
+  background: #007ee5
+}
+.dropbox > a > .icon:before {
+  font-family: FontAwesome;
+  content: "\f16b"
+}
+.snapchat {
+  background: #fffc00
+}
+.snapchat > a > .icon:before {
+  font-family: FontAwesome;
+  content: "\f2ac"
 }
 .gallery:after {
   display: table;
@@ -39674,6 +39966,59 @@ input[type=file]:hover {
 .slider .slider-item {
   position: relative
 }
+.slider .owl-nav .owl-next,
+.slider .owl-nav .owl-prev {
+  position: absolute;
+  top: 50%;
+  margin: -30px 0 0 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  text-transform: uppercase;
+  height: 60px;
+  width: 50px;
+  font-size: 40px;
+  font-weight: 100;
+  line-height: 60px;
+  padding: 0;
+  text-align: center;
+  color: rgba(255,255,255,.6);
+  background: rgba(0,0,0,.6);
+  -moz-transition: all .1s ease-in-out;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out
+}
+.slider .owl-nav .owl-next:hover,
+.slider .owl-nav .owl-prev:hover {
+  color: #fff;
+  background: #168dc5
+}
+.slider .owl-nav .owl-prev {
+  left: 0
+}
+.slider .owl-nav .owl-next {
+  right: 0
+}
+.slider .owl-nav .owl-next:before,
+.slider .owl-nav .owl-prev:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 14px;
+  left: 1px;
+  display: inline-block;
+  border-top: 2px solid #fff
+}
+.slider .owl-nav .owl-prev:before {
+  border-left: 2px solid #fff;
+  transform: rotate(-45deg);
+  left: 15px
+}
+.slider .owl-nav .owl-next:before {
+  border-right: 2px solid #fff;
+  transform: rotate(45deg)
+}
 .slider.aione .owl-dots {
   text-align: center
 }
@@ -39737,7 +40082,6 @@ input[type=file]:hover {
   right: 0
 }
 .slider.aione .slider-item .slider-caption {
-  opacity: 0;
   position: absolute;
   top: 0;
   right: 0;
@@ -39748,13 +40092,9 @@ input[type=file]:hover {
   cursor: pointer;
   text-align: center;
   box-sizing: border-box;
-  background-color: #01b7f2;
   -webkit-transition: all 280ms ease-in-out;
   -moz-transition: all 280ms ease-in-out;
   transition: all 280ms ease-in-out
-}
-.slider.aione .slider-item:hover .slider-caption {
-  opacity: 1
 }
 .slider.aione .slider-item .slider-caption .caption-title {
   color: #fff;
