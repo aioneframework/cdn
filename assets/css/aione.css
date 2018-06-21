@@ -38591,7 +38591,8 @@ input[type=file]:hover {
   margin: 0;
   padding: 0;
   list-style: none;
-  text-align: center
+  text-align: center;
+  margin-bottom: 10px
 }
 .aione-social-icons .label {
   display: none
@@ -38609,39 +38610,82 @@ input[type=file]:hover {
   font-size: 20px;
   width: 40px;
   line-height: 40px;
+  margin-right: 5px;
   font-weight: 400
 }
 .aione-social-icons > * > a {
-  display: block
+  display: block;
+  line-height: 36px
 }
 .aione-social-icons > * > a .icon {
-  display: inline-block
+  display: inline-block;
+  line-height: 36px
 }
-.aione-social-icons > * > a .text {
-  display: inline-block
+.aione-social-icons > * > a .label {
+  display: inline-block;
+  line-height: 36px
 }
 .aione-social-icons.vertical > * {
   display: block
 }
 .aione-social-icons.small > * {
-  font-size: 16px;
-  width: 34px;
-  line-height: 30px
+  font-size: 24px;
+  width: 36px
+}
+.aione-social-icons.small > *,
+.aione-social-icons.small > * > a,
+.aione-social-icons.small > * > a > .icon,
+.aione-social-icons.small > * > a > .icon:before,
+.aione-social-icons.small > * > a > .label {
+  line-height: 36px
+}
+.aione-social-icons.medium > * {
+  font-size: 28px;
+  width: 42px
+}
+.aione-social-icons.medium > *,
+.aione-social-icons.medium > * > a,
+.aione-social-icons.medium > * > a > .icon,
+.aione-social-icons.medium > * > a > .icon:before,
+.aione-social-icons.medium > * > a > .label {
+  line-height: 42px
 }
 .aione-social-icons.large > * {
-  font-size: 26px;
-  width: 54px;
-  line-height: 50px
+  font-size: 32px;
+  width: 54px
+}
+.aione-social-icons.large > *,
+.aione-social-icons.large > * > a,
+.aione-social-icons.large > * > a > .icon,
+.aione-social-icons.large > * > a > .icon:before,
+.aione-social-icons.large > * > a > .label {
+  line-height: 54px
+}
+.aione-social-icons.xlarge > * {
+  font-size: 36px;
+  width: 64px
+}
+.aione-social-icons.xlarge > *,
+.aione-social-icons.xlarge > * > a,
+.aione-social-icons.xlarge > * > a > .icon,
+.aione-social-icons.xlarge > * > a > .icon:before,
+.aione-social-icons.xlarge > * > a > .label {
+  line-height: 64px
+}
+.aione-social-icons.square > * {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0
+}
+.aione-social-icons.rounded > * {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px
 }
 .aione-social-icons.circle > * {
   -moz-border-radius: 999px;
   -webkit-border-radius: 999px;
   border-radius: 999px
-}
-.aione-social-icons.rounded > * {
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px
 }
 .aione-social-icons.light > * {
   color: #fff;
@@ -38651,30 +38695,51 @@ input[type=file]:hover {
 .aione-social-icons.light > * > a:hover {
   color: #fff
 }
+.aione-social-icons.light-solid > * {
+  color: #333;
+  background: #fff
+}
+.aione-social-icons.light-solid > * > a,
+.aione-social-icons.light-solid > * > a:hover {
+  color: #333
+}
 .aione-social-icons.light-outline > * {
   color: #fff;
   border: 2px solid #fff;
   background: 0 0
 }
-.aione-social-icons.light > * > a,
-.aione-social-icons.light > * > a:hover {
+.aione-social-icons.light-outline > * > a,
+.aione-social-icons.light-outline > * > a:hover {
   color: #fff
 }
 .aione-social-icons.dark > * {
   color: #333;
   background: 0 0
 }
-.aione-social-icons.light > * > a,
-.aione-social-icons.light > * > a:hover {
+.aione-social-icons.dark > * > a,
+.aione-social-icons.dark > * > a:hover {
   color: #333
+}
+.aione-social-icons.dark-solid > * {
+  color: #fff;
+  background: #333
+}
+.aione-social-icons.dark-solid > * > a,
+.aione-social-icons.dark-solid > * > a:hover {
+  color: #fff
 }
 .aione-social-icons.dark-outline > * {
   border: 2px solid #333;
   background-color: transparent
 }
-.aione-social-icons.light > * > a,
-.aione-social-icons.light > * > a:hover {
+.aione-social-icons.dark-outline > * > a,
+.aione-social-icons.dark-outline > * > a:hover {
   color: #333
+}
+.aione-social-icons.colored > *,
+.aione-social-icons.colored > * > a,
+.aione-social-icons.colored > * > a:hover {
+  color: #fff
 }
 .facebook {
   background: #4060a5
