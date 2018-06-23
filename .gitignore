@@ -1,5 +1,4 @@
 .htaccess
-/assets/.htaccess
 /assets/scripts
 /assets/scss
 /assets/vendor
